@@ -3,6 +3,8 @@ package com.pb.gubin.hw4;
 import java.util.Scanner;
 
 public class Anagram {
+    public static void outResult(){
+        System.out.println("Результат: ");}
     private static Scanner sc;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -45,7 +47,7 @@ public class Anagram {
         System.out.println(valueOfchar1);
         System.out.println(valueOfchar2);
         //сравниваем строки и выводим на печать: true/false
+        outResult();
         System.out.println(valueOfchar1.equalsIgnoreCase(valueOfchar2));
-
     }
 }
